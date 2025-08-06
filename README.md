@@ -41,5 +41,4 @@ Edit
 ## 🚀 How to Run Locally
 
 1. **Download or Clone** this repository:
-   ```bash
-   git clone https://github.com/your-username/greenden.git
+   https://meena-sathiya.github.io/Greenden-Prj/
