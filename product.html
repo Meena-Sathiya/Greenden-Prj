@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <!-- tailwind css cdn link from tailwindcss play cdn official because when i use heroicon that code support new version so if i took link from jsdeliver it didn't support properly and style won't apply so i took link from offical website -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <!-- To style element we have to style inside of element -->
+        <h1 class="text-2xl font-semibold">GREENDEN</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 md:hidden "> <!--i dont want this from medium screen so md hidden-->
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="gap-5 text-gray-600 font-medium hidden md:flex">
+            <!-- i create anchor tag to add page inside  -->
+            <li>
+                <a class=" hover:underline hover:text-black " href="index.html">Home</a>
+                <!--after created product page i linked home page link here-->
+
+            </li>
+
+            <li>
+                <a class="hover:underline  hover:text-black" href="#">Product</a>
+            </li>
+
+            <li>
+                <a class="hover:underline  hover:text-black" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Our Products -->
+    <section class="text-center">
+        <h1 class=" text-3xl font-bold m-4">Our Products</h1>
+        <input class="border border-black p-2 " style="width: 50%;" type="text" placeholder="search here">
+    </section>
+
+    <!-- products -->
+    <div>
+        <div class="grid grid-cols-2 gap-5 md:grid-cols-4 m-10 ">
+            <!-- img w,h auto so it fix according to div or else i have to give inline for all image class to img treated as text so we will get that in center -->
+            <!-- in css for animation we first give transform then we give translate x or y like that here akso first we have mention transform then only translate will work -->
+            <!-- only translate-y-2 means moving to down next div i add minus- in front of translate so it will go up -->
+            <div class="text-center p-2 ">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:translate-y-2 " src="./img/p1.jpg"
+                    alt="plant">
+                <h2>Rubber Plant</h2>
+                <p>10£</p>
+            </div>
+
+            <div class="text-center p-2">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:-translate-y-2" src="./img/p4.jpg"
+                    alt="plant">
+                <h2>Bromeliad Plant</h2>
+                <p>12£</p>
+            </div>
+
+            <div class="text-center p-2">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:-translate-y-2" src="./img/p3.jpg"
+                    alt="plant">
+                <h2>Money Plant</h2>
+                <p>10£</p>
+            </div>
+
+            <div class="text-center p-2">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:-translate-y-2" src="./img/P5.jpg"
+                    alt="plant">
+                <h2>Chinese Evergreen Plant</h2>
+                <p>10£</p>
+            </div>
+
+            <div class="text-center p-2 ">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:-translate-y-2 " src="./img/p2.jpg"
+                    alt="plant">
+                <h2>Rubber Plant</h2>
+                <p>10£</p>
+            </div>
+
+            <div class="text-center p-2">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:-translate-y-2" src="./img/p6.jpg"
+                    alt="plant">
+                <h2>Bromeliad Plant</h2>
+                <p>12£</p>
+            </div>
+            <div class="text-center p-2 ">
+                <img class="w-auto h-auto  hover:shadow-2xl transform hover:-translate-y-2" src="./img/p7.jpeg" alt="plant">
+                <h2>Money Plant</h2>
+                <p>10£</p>
+            </div>
+            <div class="text-center p-2">
+                <img class="w-auto h-auto hover:shadow-2xl transform hover:-translate-y-2" src="./img/p8.jpg" alt="plant">
+                <h2>Chinese Evergreen Plant</h2>
+                <p>10£</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <section class="bg-green-200 mt-2">
+        <h1 class="text-2xl font-bold p-4">GREENDEN</h1>
+        <p class="p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, sint</p>
+        <p class="p-4">@2021 Greenden@gmail.com</p>
+    </section>
+
+
+
+
+</body>
+
+</html>
